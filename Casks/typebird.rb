@@ -6,10 +6,14 @@
 # Sparkle appcast to R2, then rewrites the two lines below and pushes here.
 # Don't hand-edit `version` / `sha256` — the release script owns them.
 cask "typebird" do
-  version "0.1.0"
+  # "<marketing version>,<build>" — CFBundleShortVersionString + CFBundleVersion,
+  # which is the pair the appcast carries and the shape `livecheck`'s :sparkle
+  # strategy returns. A bare "0.1.0" here would read as perpetually out of date
+  # against the feed. Only the first field appears in the filename.
+  version "0.1.0,1"
   sha256 "6407d77ce7045e765e2d5b8bff61150f6d1b0a0970678115f272cd2badb79239"
 
-  url "https://typebird.app/downloads/Typebird-#{version}.dmg"
+  url "https://typebird.app/downloads/Typebird-#{version.csv.first}.dmg"
   name "Typebird"
   desc "Improve, translate, and tone-check the text you have selected"
   homepage "https://typebird.app/"
