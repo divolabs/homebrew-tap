@@ -5,15 +5,20 @@ The Homebrew tap for [Typebird](https://typebird.app) — three AI buttons
 anywhere on your Mac.
 
 ```sh
+brew install --cask typebird-app/tap/typebird
+```
+
+Naming the tap inline is deliberate, not shorthand: Homebrew 6 refuses to load
+a cask from an untrusted third-party tap unless the tap is named in the command
+itself, so the familiar two-step form needs a trust step in between —
+
+```sh
 brew tap typebird-app/tap
+brew trust typebird-app/tap
 brew install --cask typebird
 ```
 
-Or in one line, without tapping first:
-
-```sh
-brew install --cask typebird-app/tap/typebird
-```
+— and the one-liner above skips it. Either way you end up with the same cask.
 
 Typebird is a menu-bar app: after installing, launch it once, grant
 Accessibility in System Settings → Privacy & Security → Accessibility, then
