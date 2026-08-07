@@ -5,7 +5,7 @@ The Homebrew tap for [Typebird](https://typebird.app) — three AI buttons
 anywhere on your Mac.
 
 ```sh
-brew install --cask typebird-app/tap/typebird
+brew install --cask divolabs/tap/typebird
 ```
 
 Naming the tap inline is deliberate, not shorthand: Homebrew 6 refuses to load
@@ -13,8 +13,8 @@ a cask from an untrusted third-party tap unless the tap is named in the command
 itself, so the familiar two-step form needs a trust step in between —
 
 ```sh
-brew tap typebird-app/tap
-brew trust typebird-app/tap
+brew tap divolabs/tap
+brew trust divolabs/tap
 brew install --cask typebird
 ```
 
@@ -22,7 +22,8 @@ brew install --cask typebird
 
 Typebird is a menu-bar app: after installing, launch it once, grant
 Accessibility in System Settings → Privacy & Security → Accessibility, then
-select text anywhere and press ⌃⌥T.
+select text anywhere and **double-tap ⌃**. A chord like ⌃⌥T is recordable in
+Settings if you prefer one.
 
 Requires macOS 14 (Sonoma) or later on Apple silicon.
 
