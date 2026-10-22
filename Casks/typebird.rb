@@ -10,10 +10,10 @@ cask "typebird" do
   # which is the pair the appcast carries and the shape `livecheck`'s :sparkle
   # strategy returns. A bare "0.1.0" here would read as perpetually out of date
   # against the feed. Only the first field appears in the filename.
-  version "0.1.6,38"
-  sha256 "9e0bf5e32074ba11bd4bba6a90653957ffb34b084c9cd11402e699969b0528d9"
+  version "1.0.0,57"
+  sha256 "22b49edb4e4b3b2c672edd163e614a8b706e0dd2d749d870170c60e826f32f02"
 
-  url "https://typebird.app/downloads/Typebird-0.1.6-38.dmg"
+  url "https://typebird.app/downloads/Typebird-1.0.0-57.dmg"
   name "Typebird"
   desc "Improve, translate, and tone-check the text you have selected"
   homepage "https://typebird.app/"
